@@ -22,7 +22,7 @@ The organisation page groups the projects into three tracks of two cards each (`
 |---|---|---|---|
 | Learning | Suffa | preview | https://suffa.siralabs.org, `Sira-Labs/Suffa` |
 | Learning | Arqam | preview | https://arqam-stg.siralabs.org, `/arqam/` (repository private) |
-| Data | Tabayyun | preview | https://tabayyun.siralabs.org, `Sira-Labs/Tabayyun` |
+| Data | Tabayyun | preview | https://tabayyun-stg.siralabs.org, `Sira-Labs/Tabayyun` |
 | Data | Sahifa | in development | `Sira-Labs/Sahifa`, `/sahifa/` |
 | Security | Thawr | release candidate | `Sira-Labs/Thawr`, `/thawr/` |
 | Security | Khandaq | design (R0) | `Sira-Labs/Khandaq`, `/khandaq/` |
