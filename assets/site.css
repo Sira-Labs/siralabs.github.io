@@ -157,7 +157,8 @@ a:focus-visible,
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: var(--font-display);
   letter-spacing: -0.02em;
   line-height: 1.08;
@@ -176,7 +177,8 @@ h2 {
   margin-bottom: 16px;
 }
 
-h3 {
+h3,
+h4 {
   font-size: 24px;
   font-weight: 700;
 }
@@ -294,6 +296,44 @@ section {
 
 .card.highlight {
   border-color: var(--accent);
+}
+
+/* Projects on the organisation page: three tracks of two cards each */
+.tracks {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+
+.track {
+  display: grid;
+  gap: 16px;
+}
+
+/* Line up titles, intros and cards across the tracks where subgrid is supported */
+@supports (grid-template-rows: subgrid) {
+  .tracks {
+    row-gap: 16px;
+  }
+
+  .track {
+    grid-row: span 4;
+    grid-template-rows: subgrid;
+  }
+}
+
+.track .track-title {
+  font-size: 15px;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.track .track-intro {
+  margin: -8px 0 0;
+  color: var(--muted);
+  font-size: 16px;
 }
 
 /* Project status chip and link row on the organisation page */
@@ -486,6 +526,23 @@ section {
     grid-template-columns: 1fr;
     gap: 2px;
   }
+
+  /* One track per row, its two cards side by side */
+  .tracks {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+
+  .track {
+    grid-row: auto;
+    grid-template-rows: none;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .track .track-title,
+  .track .track-intro {
+    grid-column: 1 / -1;
+  }
 }
 
 @media (max-width: 560px) {
@@ -495,6 +552,7 @@ section {
   }
 
   .grid-4,
+  .track,
   .phone-row {
     grid-template-columns: 1fr;
   }
