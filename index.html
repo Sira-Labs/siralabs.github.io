@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sira Labs · Software you own, built in the open</title>
-  <meta name="description" content="Sira Labs builds self-hostable software from written specs: Thawr, Tabayyun, Suffa and Arqam, each named for a moment of the Sīra. Tabayyun, Suffa and Arqam are open as early previews.">
+  <meta name="description" content="Sira Labs builds self-hostable software from written specs, each project named for a moment of the Sīra: Suffa and Arqam for learning, Tabayyun and Sahifa for data quality, Thawr and Khandaq for security.">
   <meta name="theme-color" content="#111827">
   <link rel="icon" href="assets/sira-labs/icon.svg" type="image/svg+xml">
   <meta property="og:title" content="Sira Labs">
@@ -47,33 +47,15 @@
 
       <section id="projects" aria-labelledby="projects-title">
         <h2 id="projects-title">Projects</h2>
-        <p class="section-intro">Four stations on one path. Every project runs on your own server, keeps your data with you, and says in its name what it is for. Tabayyun, Suffa and Arqam are open as early previews: try them, and expect them to change.</p>
-        <div class="grid grid-4">
-          <article class="card">
-            <div class="stripe" style="background: #4fc3c8"></div>
-            <span class="status">In development</span>
-            <h3>Thawr</h3>
-            <span class="ar" lang="ar" dir="rtl" style="align-self: flex-start">ثور</span>
-            <p>A self-hosted WireGuard mesh VPN in one binary. No cloud, and it keeps working offline.</p>
-            <p class="meaning">The cave of the Hijra: hidden, protected, reachable only by those who belong.</p>
-            <a class="more" href="https://github.com/thedatadudech/Thawr">Thawr on GitHub →</a>
-          </article>
-          <article class="card">
-            <div class="stripe" style="background: #5eead4"></div>
-            <span class="status preview">Preview</span>
-            <h3>Tabayyun</h3>
-            <span class="ar" lang="ar" dir="rtl" style="align-self: flex-start">تبيّن</span>
-            <p>Verifies industrial time series before anyone acts on them: a score per series and an explanation for every finding.</p>
-            <p class="meaning">To verify a report before acting on it.</p>
-            <div class="links">
-              <a class="more" href="https://tabayyun.siralabs.org/">Open Tabayyun →</a>
-              <a class="more secondary" href="https://github.com/Sira-Labs/Tabayyun">GitHub</a>
-            </div>
-          </article>
+        <p class="section-intro">Six projects on one path, in three tracks. Every project runs on your own server, keeps your data with you, and says in its name what it is for. Suffa, Arqam and Tabayyun are open as early previews: try them, and expect them to change.</p>
+        <div class="tracks">
+        <div class="track" aria-labelledby="track-learning">
+          <h3 id="track-learning" class="track-title">Learning</h3>
+          <p class="track-intro">Learn together: with your teacher, your class and your own sources.</p>
           <article class="card">
             <div class="stripe" style="background: #3fb5a3"></div>
             <span class="status preview">Preview</span>
-            <h3>Suffa</h3>
+            <h4>Suffa</h4>
             <span class="ar" lang="ar" dir="rtl" style="align-self: flex-start">الصُّفَّة</span>
             <p>Offline-first Arabic learning with your teacher, your class and an AI tutor.</p>
             <p class="meaning">The platform in the Prophet's ﷺ mosque where people lived and learned.</p>
@@ -85,7 +67,7 @@
           <article class="card highlight">
             <div class="stripe" style="background: #f5a524"></div>
             <span class="status preview">Preview</span>
-            <h3>Arqam</h3>
+            <h4>Arqam</h4>
             <span class="ar" lang="ar" dir="rtl" style="align-self: flex-start">أرقم</span>
             <p>One connected journey to AI-native AI engineer, data scientist or AI researcher, from openly licensed material.</p>
             <p class="meaning">Dār al-Arqam, the house where the first Muslims learned together.</p>
@@ -94,6 +76,63 @@
               <a class="more secondary" href="arqam/">About Arqam</a>
             </div>
           </article>
+        </div>
+        <div class="track" aria-labelledby="track-data">
+          <h3 id="track-data" class="track-title">Data</h3>
+          <p class="track-intro">Verify data before anyone acts on it, and explain what was found.</p>
+          <article class="card">
+            <div class="stripe" style="background: #5eead4"></div>
+            <span class="status preview">Preview</span>
+            <h4>Tabayyun</h4>
+            <span class="ar" lang="ar" dir="rtl" style="align-self: flex-start">تبيّن</span>
+            <p>Verifies industrial time series before anyone acts on them: a score per series and an explanation for every finding.</p>
+            <p class="meaning">To verify a report before acting on it.</p>
+            <div class="links">
+              <a class="more" href="https://tabayyun.siralabs.org/">Open Tabayyun →</a>
+              <a class="more secondary" href="https://github.com/Sira-Labs/Tabayyun">GitHub</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="stripe" style="background: #93abff"></div>
+            <span class="status dev">In development</span>
+            <h4>Sahifa</h4>
+            <span class="ar" lang="ar" dir="rtl" style="align-self: flex-start">صحيفة</span>
+            <p>Assesses whole data stores: profiles every table, scores six quality dimensions with how sure each score is, and explains every finding.</p>
+            <p class="meaning">The charter of Medina, which set down in writing what each party could expect of the others.</p>
+            <div class="links">
+              <a class="more" href="https://github.com/Sira-Labs/Sahifa">Sahifa on GitHub →</a>
+              <a class="more secondary" href="sahifa/">About Sahifa</a>
+            </div>
+          </article>
+        </div>
+        <div class="track" aria-labelledby="track-security">
+          <h3 id="track-security" class="track-title">Security</h3>
+          <p class="track-intro">Protect what is yours, and test it the way an attacker would.</p>
+          <article class="card">
+            <div class="stripe" style="background: #4fc3c8"></div>
+            <span class="status dev">Release candidate</span>
+            <h4>Thawr</h4>
+            <span class="ar" lang="ar" dir="rtl" style="align-self: flex-start">ثور</span>
+            <p>A self-hosted WireGuard mesh VPN in one binary. No cloud, and it keeps working offline.</p>
+            <p class="meaning">The cave of the Hijra: hidden, protected, reachable only by those who belong.</p>
+            <div class="links">
+              <a class="more" href="https://github.com/Sira-Labs/Thawr">Thawr on GitHub →</a>
+              <a class="more secondary" href="thawr/">About Thawr</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="stripe" style="background: #d97a44"></div>
+            <span class="status dev">Design</span>
+            <h4>Khandaq</h4>
+            <span class="ar" lang="ar" dir="rtl" style="align-self: flex-start">الخندق</span>
+            <p>A command post for authorised AI red teaming: the open-source tools under one scope, one chain of evidence, reports mapped to MITRE ATLAS and OWASP.</p>
+            <p class="meaning">The trench dug around Medina on Salmān al-Fārisī's counsel: attacker thinking in the service of defence.</p>
+            <div class="links">
+              <a class="more" href="https://github.com/Sira-Labs/Khandaq">Khandaq on GitHub →</a>
+              <a class="more secondary" href="khandaq/">About Khandaq</a>
+            </div>
+          </article>
+        </div>
         </div>
       </section>
 
