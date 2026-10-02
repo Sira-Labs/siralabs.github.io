@@ -12,15 +12,24 @@ Pages and `www` as a CNAME to `sira-labs.github.io`.
 - `assets/site.css` · shared styles; `assets/<brand>/` · marks, icons, screenshots and social
   previews, generated in `Sira-Labs/Arqam` by `docs/assets/genlogo.py`
 
-The apps themselves are not served from this repository; the pages link to them on their
-own subdomains:
+## Projects
 
-- https://tabayyun.siralabs.org · Tabayyun (preview)
-- https://suffa.siralabs.org · Suffa (preview)
-- https://arqam-stg.siralabs.org · Arqam (preview)
+The organisation page groups the projects into three tracks of two cards each (`.tracks` in
+`site.css`). Each card has a status chip (`.status.preview` for a hosted preview, plain
+`.status` for anything earlier) and its links.
 
-All three are early previews for now (`.status.preview` chip on each card). When a project
-leaves preview or moves, update its chip and links on the card in `index.html`, and the Arqam
-page for Arqam.
+| Track | Project | Status | Links |
+|---|---|---|---|
+| Learning | Suffa | preview | https://suffa.siralabs.org, `Sira-Labs/Suffa` |
+| Learning | Arqam | preview | https://arqam-stg.siralabs.org, `/arqam/` (repository private) |
+| Data | Tabayyun | preview | https://tabayyun.siralabs.org, `Sira-Labs/Tabayyun` |
+| Data | Sahifa | in development | `Sira-Labs/Sahifa`, product page at https://sira-labs.github.io/Sahifa/ |
+| Security | Thawr | release candidate | `Sira-Labs/Thawr`, product page at https://sira-labs.github.io/Thawr/ |
+| Security | Khandaq | design (R0) | `Sira-Labs/Khandaq` |
+
+The apps run on their own subdomains, not from this repository. When a project changes status
+or moves, update its card in `index.html` and this table, and the Arqam page for Arqam. Keep
+the same order and wording in the organisation profile (`Sira-Labs/.github`,
+`profile/README.md`).
 
 Preview locally: `python3 -m http.server` in this folder, then open http://localhost:8000.
